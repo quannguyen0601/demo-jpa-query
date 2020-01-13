@@ -42,4 +42,12 @@ public class Post {
         NEW,
         PUBLIC
     }
+
+    public Post(Long id,String title, Date createdOn, String createdBy, Post.TYPE type) {
+        this.id = id;
+        this.title = title;
+        this.createdOn = createdOn;
+        this.createdBy = createdBy;
+        this.postType = type;
+    }
 }

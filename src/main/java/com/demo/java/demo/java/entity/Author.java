@@ -23,5 +23,8 @@ public class Author {
     private int age;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "author")
-    private List<Post> listPost = new ArrayList<>();
+    private List<Post> posts = new ArrayList<>();
+
+    @Transient
+    private List<Post> top10posts = new ArrayList<>();
 }

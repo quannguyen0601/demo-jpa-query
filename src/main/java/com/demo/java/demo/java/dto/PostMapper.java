@@ -14,5 +14,9 @@ public interface PostMapper {
     @Mapping(target = "authorAge", source = "author.age")
     PostDataDto toDto(Post post);
 
+    PostDataMiniDto toMiniDto(Post post);
+
     List<PostDataDto> toListDto(List<Post> post);
+    List<PostDataMiniDto> toListMiniDto(List<Post> post);
+
 }
